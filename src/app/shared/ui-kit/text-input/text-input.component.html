@@ -1,0 +1,17 @@
+<!-- Check If The Input Used With Reactive Forms -->
+@if(inputControl) {
+  <input type="text"
+        [id]="inputId"
+        [placeholder]="inputPlaceholder"
+        [value]="inputValue"
+        (input)="onInputValueChange($event)"
+        [class.invalid]="inputControl.touched && inputControl.invalid"
+        [formControl]="inputControl">
+  } @else {
+  <input type="text"
+        [id]="inputId"
+        [placeholder]="inputPlaceholder"
+        [value]="inputValue"
+        (input)="onInputValueChange($event)">
+}
+

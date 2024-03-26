@@ -1,0 +1,25 @@
+
+
+<!-- Check If The Fave Button Used With Reactive Forms -->
+@if(toggleButtonControl) {
+  <label tabindex="0" [ngClass]="{
+    'active': checkbox.checked,
+    'large': size === 'large',
+    'small': size === 'small',
+  }">
+    <input #checkbox [value]="toggleButtonValue"
+          type="checkbox" hidden
+          (change)="onChange($event)"
+          [formControl]="toggleButtonControl">
+  </label>
+} @else {
+  <label tabindex="0" [ngClass]="{
+    'active': checkbox.checked,
+    'large': size === 'large',
+    'small': size === 'small',
+  }">
+    <input #checkbox [value]="toggleButtonValue"
+          type="checkbox" hidden
+          (change)="onChange($event)">
+  </label>
+}

@@ -1,0 +1,26 @@
+:host {
+  display: block;
+  user-select: none;
+}
+
+.bredcrumps {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  padding-bottom: 0;
+  &__link {
+    text-decoration: none;
+    font-family: Gotham;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #828EAD;
+  }
+  &__slash {
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #828EAD;
+  }
+}

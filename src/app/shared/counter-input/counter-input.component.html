@@ -1,0 +1,18 @@
+<!-- Check If The Input Used With Reactive Forms -->
+<div class="counter">
+  <button class="counter__action-btn counter__action-btn--dec" (click)="onDecrement()"></button>
+  @if(control) {
+    <input type="text"
+          class="counter__input"
+          readonly
+          [value]="counterValue + ' ' + text"
+          [formControl]="control">
+   } @else {
+    <input type="text"
+          class="counter__input"
+          readonly
+          [value]="counterValue + ' ' + text">
+  }
+  <button class="counter__action-btn counter__action-btn--inc" (click)="onIncrement()"></button>
+</div>
+

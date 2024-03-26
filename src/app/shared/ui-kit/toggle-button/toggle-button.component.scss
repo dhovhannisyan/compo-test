@@ -1,0 +1,53 @@
+@import "../../../../assets/scss/colors.scss";
+
+label {
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 32px;
+  background-color: $gray;
+  padding: 2px;
+  cursor: pointer;
+  &::after {
+    content: '';
+    display: inline-block;
+    margin-left: 0;
+    border-radius: 50%;
+    background-color: white;
+    transition: margin-left .2s;
+  }
+  &.active {
+    background-color: $blue;
+    &::after {
+      margin-left: 16px;
+    }
+  }
+
+  &.large {
+    height: 32px;
+    width: 48px;
+    &::after {
+      height: 28px;
+      width: 28px;
+    }
+    &.active {
+      &::after {
+        margin-left: 16px;
+      }
+    }
+  }
+
+  &.small {
+    height: 24px;
+    width: 40px;
+    &::after {
+      height: 20px;
+      width: 20px;
+    }
+    &.active {
+      &::after {
+        margin-left: 16px;
+      }
+    }
+  }
+}
+

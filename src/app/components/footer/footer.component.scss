@@ -1,0 +1,82 @@
+@import "../../../assets/scss/colors.scss";
+
+:host {
+  display: block;
+}
+
+.footer {
+  padding: 0 24px;
+  margin-bottom: 30px;
+
+  &__wrapper {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E2E4F0;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 40px;
+    img {
+      height: 40px;
+    }
+  }
+
+  &__support-list {
+    display: flex;
+    align-items: center;
+    li {
+      margin-right: 30px;
+      .address {
+        font-family: Gotham;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        margin-bottom: 5px;
+      }
+      .text {
+        font-family: Gotham;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        color: #77829E;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    .suggest-idea-link {
+      padding: 12px 24px;
+      border-radius: 8px;
+      background-color: #F2F6FF;
+      font-family: Gotham;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+      color: $blue;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    li {
+      margin-right: 24px;
+      a {
+        font-family: Gotham;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+      }
+    }
+  }
+
+}

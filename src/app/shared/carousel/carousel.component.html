@@ -1,0 +1,23 @@
+@if (imgPaths?.length) {
+  <div class="carousel">
+    <img [src]="imgPaths[currentIndex]" alt="" class="carousel__current-image">
+    <div class="carousel__wrapper">
+      <button class="carousel__action-btn" (click)="goPrev()">
+        <img src="../../../assets/images/carousel/left-arrow-icon.svg" alt="Arrow Left">
+      </button>
+      <ul class="carousel__img-list">
+        @for (imgPath of imgPaths; track imgPath) {
+          <li>
+            <button class="carousel__img-btn" (click)="goTo($index)">
+              <img [src]="imgPath" alt="Product Image">
+            </button>
+          </li>
+        }
+      </ul>
+      <button class="carousel__action-btn" (click)="goNext()">
+        <img src="../../../assets/images/carousel/right-arrow-icon.svg" alt="Arrow Right">
+      </button>
+    </div>
+  </div>
+}
+

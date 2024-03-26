@@ -1,0 +1,30 @@
+<header class="app__header">
+  <!-- Logo -->
+  <a routerLink="/" class="app__logo">
+    <img src="../../../assets/images/logo.svg" alt="Site Logo">
+  </a>
+  <!-- Menu Toggle Button -->
+  <app-button class="menu-btn">
+    <div class="menu-btn__content">
+      <img class="menu-btn__icon" src="../../../assets/images/menu-icon.svg" alt="Menu Icon">
+      <span class="menu-btn__text">Меню</span>
+    </div>
+  </app-button>
+  <!-- Search -->
+  <app-search (applyed)="onSearchApplyed($event)"></app-search>
+  <!-- Notifications -->
+  <app-notifications></app-notifications>
+  <!-- Seporator -->
+  <span class="seporator"></span>
+  <!-- Favorites Link -->
+  <a routerLink="/" class="favorites-link">
+    <img src="../../../assets/images/fave-icon-gray.svg" alt="Favorites Icon">
+  </a>
+  <!-- Cart -->
+  <a routerLink="/" class="cart-link">
+    <img class="cart-link__icon" src="../../../assets/images/cart-icon.svg" alt="Cart Icon">
+    <span class="cart-link__text">144 235₽</span>
+  </a>
+  <!-- Profile Button -->
+  <app-profile-button></app-profile-button>
+</header>

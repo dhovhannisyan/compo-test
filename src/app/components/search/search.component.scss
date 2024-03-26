@@ -1,0 +1,60 @@
+@import "../../../assets/scss/colors.scss";
+
+:host {
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.search {
+  position: relative;
+  margin-left: 24px;
+  &__input {
+    min-width: 250px;
+    width: 100%;
+    padding: 16px;
+    padding-right: 85px;
+    border-radius: 8px;
+    border: none;
+    outline: 1px solid #E2E4F0;
+    font-family: Gotham;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    -webkit-transition: outline .1s;
+    transition: outline .2s;
+
+    &:not(:focus):hover {
+      outline-color: $gray;
+    }
+
+    &:focus {
+      outline-width: 2px;
+      outline-color: $blue;
+    }
+
+  }
+
+  &__actions {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    width: 85px;
+    padding: 0 16px;
+    padding-top: 5px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    img {
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  &__remove-btn {
+    margin-right: 5px;
+  }
+
+}
+

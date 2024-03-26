@@ -1,0 +1,18 @@
+label {
+  display: inline-block;
+  background-image: url(../../../../assets/images/fave-icon.svg);
+  background-size: cover;
+  transition: background-image 0.2s;
+  cursor: pointer;
+  &.active {
+    background-image: url(../../../../assets/images/fave-icon-active.svg);
+  }
+  &.large {
+    height: 32px;
+    width: 32px;
+  }
+  &.small {
+    height: 24px;
+    width: 24px;
+  }
+}

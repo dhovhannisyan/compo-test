@@ -1,0 +1,103 @@
+<div class="product-details">
+  <h2 class="product-details__title">Кроссовки мужские Skechers Sunny Dale</h2>
+  <div class="product-details__main-wrapper">
+    <!-- First Column  -->
+    <div class="first-col">
+      <app-carousel [imgPaths]="imgPaths"></app-carousel>
+    </div>
+    <!-- Second Column -->
+    <div class="second-col">
+      <div class="wrapper">
+        <div class="wrapper__first-col">
+          <!-- Top -->
+          <div class="container">
+            <div class="price">
+              <p class="price__discount-text">166 534.00 цена без скидки</p>
+              <div class="wrapper">
+                <span class="price__number">122 566 <span class="currency">₽</span></span>
+                <span class="price__label">-15%</span>
+              </div>
+            </div>
+            <div class="package">
+              <span class="package__count">12 штук в уп.</span>
+              <div class="order">
+                <app-toggle-button class="order__toggle-btn" size="small"></app-toggle-button>
+                <label class="order__label">Заказ упаковкой</label>
+              </div>
+            </div>
+          </div>
+          <!-- Bottom -->
+          <ul class="delivery">
+            <li>
+              <h3 class="delivery__heading">Завтра</h3>
+              <p class="delivery__text">Доставка</p>
+            </li>
+            <li>
+              <h3 class="delivery__heading">7 шт.</h3>
+              <p class="delivery__text">Тарасовка</p>
+            </li>
+            <li>
+              <h3 class="delivery__heading">7 шт.</h3>
+              <p class="delivery__text">Тарасовка</p>
+            </li>
+          </ul>
+          <!-- Actions -->
+          <div class="actions">
+            <app-counter-input class="actions__counter" [counterValue]="24" [range]="2" text="штуки"></app-counter-input>
+            <label class="actions__favorite" for="five-id">
+              <app-fave-button [id]="'five-id'"></app-fave-button>
+            </label>
+          </div>
+        </div>
+        <div class="wrapper__second-col">
+          <section class="characteristics">
+            <h3 class="characteristics__title">Характеристики</h3>
+            <ul class="characteristics__list">
+              <li>
+                <span class="characteristics__value">ELC00696</span>
+                <span class="characteristics__type">Код поставщика</span>
+              </li>
+              <li>
+                <span class="characteristics__value">ELC0200000696</span>
+                <span class="characteristics__type">Артикул</span>
+              </li>
+              <li>
+                <span class="characteristics__value">ELC00696</span>
+                <span class="characteristics__type">Код РАЭК</span>
+              </li>
+              <li>
+                <span class="characteristics__value">ELC00696</span>
+                <span class="characteristics__type">Код ЕТМ</span>
+              </li>
+              <li>
+                <span class="characteristics__value">Electric used</span>
+                <span class="characteristics__type">Бренд</span>
+              </li>
+              <li>
+                <span class="characteristics__value">ELC00696</span>
+                <span class="characteristics__type">Серия</span>
+              </li>
+              <li>
+                <span class="characteristics__value">ELC0200000696</span>
+                <span class="characteristics__type">Код производителя</span>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <!-- Description  -->
+      <section class="description">
+        <h3 class="description__title">Описание товара</h3>
+        <p class="description__text">
+          Создание приверженного покупателя специфицирует неопровержимый комплексный анализ ситуации.
+          CTR существенно индуцирует из ряда вон выходящий SWOT-анализ. Воздействие на потребителя
+          определяет возрастающий интеграл по поверхности, что известно даже школьникам. Отсюда
+          естественно следует, что коммуникация уравновешивает косвенный фактор коммуникации. Поле
+          направлений естественно допускает экспериментальный скачок функции, таким образом сбылась
+          мечта идиота - утверждение полностью доказано. Арифметическая прогрессия притягивает линейно
+          зависимый пул лояльных изданий.
+        </p>
+      </section>
+    </div>
+  </div>
+</div>

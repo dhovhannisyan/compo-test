@@ -1,0 +1,43 @@
+:host {
+  display: block;
+}
+
+.carousel {
+  max-width: 400px;
+  &__current-image {
+    height: 400px;
+    width: 400px;
+    border-radius: 16px;
+    display: inline-block;
+  }
+  &__wrapper {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__img-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0 14px;
+  }
+  &__img-btn {
+    img {
+      height: 64px;
+      width: 64px;
+      border-radius: 16px;
+    }
+  }
+  &__action-btn {
+    box-sizing: border-box;
+    width: 38px;
+    border-radius: 8px;
+    height: 64px;
+    background-color: #F2F6FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

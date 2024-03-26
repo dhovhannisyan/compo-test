@@ -1,0 +1,72 @@
+@import "../../../assets/scss/colors.scss";
+
+:host {
+  display: block;
+  user-select: none;
+}
+
+.app__navigation {
+  height: 56px;
+  padding: 16px 24px;
+  border-bottom: 1px solid #E2E4F0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .nav-list {
+    display: flex;
+    align-items: center;
+    li {
+      margin-right: 24px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &--main {
+    .nav-link {
+      font-family: Gotham Pro;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      color: #071435
+    }
+  }
+  &--secondary {
+    .nav-link {
+      font-family: Gotham Pro;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      color: $blue;
+    }
+    .manager-link {
+      height: 32px;
+      background-color: #F2F6FF;
+      padding: 8px 12px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      &__text {
+        margin-left: 8px;
+        color: $blue;
+      }
+      &__icon {
+        height: 16px;
+        width: 16px;
+      }
+    }
+
+    .stock-link {
+      display: flex;
+      align-items: center;
+      &__text {
+        margin-left: 5px;
+        color: $blue;
+      }
+      &__icon {
+        height: 16px;
+        width: 16px;
+      }
+    }
+  }
+}

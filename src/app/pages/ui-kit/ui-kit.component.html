@@ -1,0 +1,40 @@
+<h2>UI Kit</h2>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <!-- Input -->
+  <div class="form-field">
+    <h3>
+      <label for="inputId">Input: </label>
+    </h3>
+    <app-text-input
+      inputPlaceholder="Placeholder"
+      inputId="inputId"
+      [inputControl]="getControl('input')">
+    </app-text-input>
+  </div>
+  <br><br>
+  <!-- Fave Button  -->
+  <div class="form-field">
+    <h3>
+      <label>Fave Button: </label>
+    </h3>
+    <app-fave-button [faveButtonControl]="getControl('faveButton')"></app-fave-button>
+  </div>
+  <br><br>
+   <!-- Toggle Button  -->
+   <div class="form-field">
+    <h3>
+      <label>Toggle Button: </label>
+    </h3>
+    <app-toggle-button [toggleButtonControl]="getControl('toggleButton')" style="margin-right: 10px;"></app-toggle-button>
+    <app-toggle-button size="small"></app-toggle-button>
+  </div>
+  <br><br>
+  <!-- Button -->
+  <div class="form-field">
+    <h3>
+      <label>Button: </label>
+    </h3>
+    <app-button type="submit">Placeholder</app-button>
+  </div>
+</form>

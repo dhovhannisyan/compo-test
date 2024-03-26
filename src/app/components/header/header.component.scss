@@ -1,0 +1,89 @@
+@import "../../../assets/scss/colors.scss";
+
+:host {
+  display: block;
+  user-select: none;
+  width: 100%;
+}
+
+.app__header {
+  height: 80px;
+  width: 100%;
+  padding: 16px 24px;
+  border-bottom: 1px solid #E2E4F0;
+  display: flex;
+  align-items: center;
+}
+
+.app__logo {
+  height: 28px;
+  display: inline-block;
+  img {
+    height: 28px;
+    display: inline-block;
+  }
+}
+
+.menu-btn {
+  margin-left: 24px;
+  &__content {
+    display: flex;
+    align-items: center;
+    margin-top: -4px;
+  }
+  &__text {
+    font-weight: 700;
+    font-family: Gotham;
+    margin-left: 5px;
+    margin-top: 2px;
+  }
+  &__icon {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+app-notifications {
+  margin-left: 24px;
+}
+
+.seporator {
+  margin-left: 24px;
+  display: inline-block;
+  height: 100%;
+  width: 1px;
+  background-color: #E2E4F0;
+}
+
+.favorites-link {
+  margin-left: 24px;
+  image {
+    height: 32px;
+    width: 32px;
+  }
+}
+
+.cart-link {
+  height: 48px;
+  margin-left: 24px;
+  background-color: #F2F6FF;
+  padding: 12px 24px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  &__text {
+    font-weight: 700;
+    font-family: Gotham;
+    margin-left: 5px;
+    color: $blue;
+  }
+  &__icon {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+app-profile-button {
+  margin-left: 24px;
+}
+

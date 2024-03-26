@@ -1,0 +1,16 @@
+<!-- Check If The Input Used With Reactive Forms -->
+<div class="search">
+    <input type="text"
+          class="search__input"
+          [disabled]="disabled"
+          placeholder="Название запроса"
+          [formControl]="control">
+    <div class="search__actions">
+      <button class="search__remove-btn" (click)="onRemove()">
+        <img src="../../../assets/images/remove-icon.svg" alt="Remove Icon">
+      </button>
+      <button class="search__apply-btn" (click)="onApply()">
+        <img src="../../../assets/images/search-icon.svg" alt="Search Icon">
+      </button>
+    </div>
+</div>
